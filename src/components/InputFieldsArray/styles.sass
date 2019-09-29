@@ -1,0 +1,48 @@
+.list
+  margin: 0
+  padding: 0
+
+  .list-item
+    list-style-type: none
+    position: relative
+
+    .button
+      position: absolute
+      right: -20px
+      top: 15px
+      padding: 0
+      background: none
+      width: 15px
+      height: 15px
+      border: none
+      cursor: pointer
+      outline: none
+      text-align: center
+
+    .button__add
+      p
+        background: #8c8c8f
+        height: 15px
+        width: 3px
+        margin: 0 auto
+
+      p:after
+        content: ""
+        height: 3px
+        width: 15px
+        background: #8c8c8f
+        position: absolute
+        left: 0
+        top: 6px
+
+    .button__remove
+      p:after
+        content: ""
+        height: 3px
+        width: 15px
+        background: #8c8c8f
+        position: absolute
+        left: 0
+        top: 6px
+
+

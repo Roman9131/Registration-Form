@@ -1,0 +1,51 @@
+.form-block
+  width: 100%
+  max-width: 400px
+  padding: 30px
+  border-radius: 5px
+  background-color: #272727
+
+  button.button__submit
+    position: relative
+    width: 160px
+    height: 30px
+    z-index: 1
+    border: none
+    border-radius: 5px
+    font-size: 85%
+    font-weight: bold
+    color: #31373f
+    background: #cecfd3
+    outline: none
+    -webkit-transition: background .3s linear
+    -moz-transition: background .3s linear
+    -o-transition: background .3s linear
+    transition: background .3s linear
+
+    .button__submit_helper
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      z-index: -1
+      border-radius: 5px
+      background: #cecfd3 repeating-linear-gradient(165deg, #9fa0a2, #9fa0a2 13px, #d1d2d6 15px, #e2e3e7 55px, #9fa0a2 57px)
+      opacity: 0
+      -webkit-transition: opacity 1s linear
+      -moz-transition: opacity 1s linear
+      -o-transition: opacity 1s linear
+      transition: opacity 1s linear
+
+    &:hover
+      cursor: pointer
+
+      .button__submit_helper
+        opacity: 1
+
+    &:disabled
+      cursor: default
+      .button__submit_helper
+        opacity: 0
+
+
